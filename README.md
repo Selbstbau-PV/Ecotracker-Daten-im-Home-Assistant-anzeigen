@@ -10,7 +10,7 @@ Ein yaml Code, der den aktuellen Verbrauch, die Einspeisung und den Bezug des Ec
    
 2. [Hier klicken](https://selbstbau-pv.de/wp-content/uploads/2024/08/Ecotracker-Code.txt), alles davon kopieren und in die configuration.yaml einfügen
    
-3. Im Code steht „resource: http://[IP]/v1/json“. Da wo [IP].Dort muss die IP deines Ecotrackers drinstehen (ohne die eckigen Klammern). Da würde dann z.B. „resource: http://192.168.4.23/v1/json“ stehen
+3. Im Code steht „resource: http://[IP]/v1/json“. Da wo [IP] steht,  muss die IP deines Ecotrackers drinstehen (ohne die eckigen Klammern). Da würde dann z.B. „resource: http://192.168.4.23/v1/json“ stehen
    
 4. Home Assistant neustarten
    
