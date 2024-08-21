@@ -1,0 +1,32 @@
+rest:
+    resource: http://[IP]/v1/json
+    scan_interval: 5
+    sensor:
+      - name: "ecotracker"
+        json_attributes:
+          - "power"
+          - "energyCounterIn"
+          - "energyCounterOut"
+          
+          
+template:
+  - sensor:
+    - name: "Ecotracker Aktueller Verbrauch"
+      device_class: "power"
+      state_class: "measurement"
+      unit_of_measurement: "W"
+      state: >
+            {{ state_attr('sensor.ecotracker', 'power') }}
+        
+    - name: "Ecotracker Bezug"
+      device_class: "energy"
+      state_class: "total_increasing"
+      unit_of_measurement: "KWh"
+      state: >
+            {{ iif(state_attr('sensor.ecotracker', 'energyCounterIn'), (state_attr('sensor.ecotracker', 'energyCounterIn') | float/1000)| round(2)) }}
+    - name: "Ecotracker Einspeisung"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: >
+            {{ iif(state_attr('sensor.ecotracker', 'energyCounterOut'), (state_attr('sensor.ecotracker', 'energyCounterOut') | float/1000)| round(2)) }}
