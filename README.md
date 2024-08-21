@@ -3,7 +3,7 @@ Ein yaml Code, der den aktuellen Verbrauch, die Einspeisung und den Bezug des Ec
 
 # Vorraussetzungen:
 - Lokaler HTTP-Server im Ecotracker aktiviert (Siehe hier: [Everhome Ecotracker einrichten](https://selbstbau-pv.de/wiki/everhome-ecotracker-einrichten-smart-micro-solar/))
-- Ein Addon wie z.B. File Editor im Home Assistant
+- Ein Addon wie z.B. File Editor im Home Assistant, damit man auf Dateien zugreifen kann
 
 # Durchführung:
 1. Über den File Editor in die configuration.yaml navigieren
