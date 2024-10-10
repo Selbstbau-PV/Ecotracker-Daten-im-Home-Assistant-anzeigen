@@ -1,5 +1,5 @@
 # Ecotracker-Daten-im-Home-Assistant-anzeigen
-Ein yaml Code, der den aktuellen Verbrauch, die Einspeisung und den Bezug des Ecotrackers im Home Assistant anzeigt.
+Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Einspeisung und den Bezug des Ecotrackers im Home Assistant anzeigt.
 
 # Vorraussetzungen:
 - Lokaler HTTP-Server im Ecotracker aktiviert (Siehe hier: [Everhome Ecotracker einrichten](https://selbstbau-pv.de/wiki/everhome-ecotracker-einrichten-smart-micro-solar/))
