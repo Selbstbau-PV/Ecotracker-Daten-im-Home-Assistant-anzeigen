@@ -15,3 +15,5 @@ Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Ei
 4. Home Assistant neustarten
    
 5. Es sollten nun neue Entitäten aufgetaucht sein, die den Hausverbrauch, den Bezug und die Einspeisung anzeigen. Diese kannst du nun deinem Dashboard hinzufügen
+
+![image](https://github.com/user-attachments/assets/2ef17906-0538-43e1-8889-02e9f2f4d398)
