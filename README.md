@@ -1,4 +1,4 @@
-# Everhome Ecotracker-Daten-im-Home-Assistant-anzeigen
+# Everhome-Ecotracker-Daten-im-Home-Assistant-anzeigen
 Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Einspeisung und den Bezug des Everhome Ecotrackers im Home Assistant anzeigt.
 
 # Vorraussetzungen:
