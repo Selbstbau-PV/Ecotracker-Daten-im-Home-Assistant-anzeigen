@@ -1,8 +1,8 @@
-# Ecotracker-Daten-im-Home-Assistant-anzeigen
-Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Einspeisung und den Bezug des Ecotrackers im Home Assistant anzeigt.
+# Everhome Ecotracker-Daten-im-Home-Assistant-anzeigen
+Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Einspeisung und den Bezug des Everhome Ecotrackers im Home Assistant anzeigt.
 
 # Vorraussetzungen:
-- Lokaler HTTP-Server im Ecotracker aktiviert (Siehe hier: [Everhome Ecotracker einrichten](https://selbstbau-pv.de/wiki/everhome-ecotracker-einrichten-smart-micro-solar/))
+- Lokaler HTTP-Server im Everhome Ecotracker aktiviert (Siehe hier: [Everhome Ecotracker einrichten](https://selbstbau-pv.de/wiki/everhome-ecotracker-einrichten-smart-micro-solar/))
 - Ein Addon wie z.B. File Editor im Home Assistant, damit man auf Dateien zugreifen kann
 
 # Durchführung:
