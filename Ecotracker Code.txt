@@ -11,7 +11,7 @@ rest:
           
 template:
   - sensor:
-    - name: "Ecotracker Aktueller Verbrauch"
+    - name: "Ecotracker aktueller Verbrauch"
       device_class: "power"
       state_class: "measurement"
       unit_of_measurement: "W"
@@ -23,10 +23,10 @@ template:
       state_class: "total_increasing"
       unit_of_measurement: "kWh"
       state: >
-            {{ iif(state_attr('sensor.ecotracker', 'energyCounterIn'), (state_attr('sensor.ecotracker', 'energyCounterIn') | float/1000)| round(2)) }}
+            {{ state_attr('sensor.ecotracker', 'energyCounterIn') | default(0) | float / 1000 | round(2) }}
     - name: "Ecotracker Einspeisung"
       unit_of_measurement: "kWh"
       device_class: "energy"
       state_class: "total_increasing"
       state: >
-            {{ iif(state_attr('sensor.ecotracker', 'energyCounterOut'), (state_attr('sensor.ecotracker', 'energyCounterOut') | float/1000)| round(2)) }}
+            {{ state_attr('sensor.ecotracker', 'energyCounterOut') | default(0) | float / 1000 | round(2) }}
