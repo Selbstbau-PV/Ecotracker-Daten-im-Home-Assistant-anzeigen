@@ -21,7 +21,7 @@ template:
     - name: "Ecotracker Bezug"
       device_class: "energy"
       state_class: "total_increasing"
-      unit_of_measurement: "KWh"
+      unit_of_measurement: "kWh"
       state: >
             {{ iif(state_attr('sensor.ecotracker', 'energyCounterIn'), (state_attr('sensor.ecotracker', 'energyCounterIn') | float/1000)| round(2)) }}
     - name: "Ecotracker Einspeisung"
