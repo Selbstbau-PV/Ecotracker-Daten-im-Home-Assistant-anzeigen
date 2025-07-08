@@ -8,7 +8,7 @@ Ein yaml Code von https://selbstbau-pv.de/ , der den aktuellen Verbrauch, die Ei
 # Durchführung:
 1. Über den File Editor in die configuration.yaml navigieren
    
-2. [Hier klicken](https://cdn.shopify.com/s/files/1/0929/9011/2090/files/Ecotracker-Code.txt?v=1738577389), alles davon kopieren und in die configuration.yaml einfügen
+2. [Hier klicken](https://github.com/Selbstbau-PV/Ecotracker-Daten-im-Home-Assistant-anzeigen/blob/main/Ecotracker%20Code.txt), alles davon kopieren und in die configuration.yaml einfügen
    
 3. Im Code steht „resource: http://[IP]/v1/json“. Da wo [IP] steht,  muss die IP deines Ecotrackers drinstehen (ohne die eckigen Klammern). Da würde dann z.B. „resource: http://192.168.4.23/v1/json“ stehen
    
