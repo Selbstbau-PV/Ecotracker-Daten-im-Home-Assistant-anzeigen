@@ -23,10 +23,10 @@ template:
       state_class: "total_increasing"
       unit_of_measurement: "kWh"
       state: >
-            {{ state_attr('sensor.ecotracker', 'energyCounterIn') | default(0) | float / 1000 | round(2) }}
+            {{ "%.2f"|format((state_attr('sensor.ecotracker', 'energyCounterIn') | default(0) | float / 1000)) }}
     - name: "Ecotracker Einspeisung"
       unit_of_measurement: "kWh"
       device_class: "energy"
       state_class: "total_increasing"
       state: >
-            {{ state_attr('sensor.ecotracker', 'energyCounterOut') | default(0) | float / 1000 | round(2) }}
+            {{ "%.2f"|format((state_attr('sensor.ecotracker', 'energyCounterOut') | default(0) | float / 1000)) }}
